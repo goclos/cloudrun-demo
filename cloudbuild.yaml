@@ -18,3 +18,5 @@
    - 'europe-central2'
  images:
  - 'gcr.io/$PROJECT_ID/usluga-demonstracyjna:$COMMIT_SHA'
+
+ 
