@@ -8,8 +8,16 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     name = os.environ.get("NAME", "World")
-    #return '<title>helloRun</title><center><img src=/static/helloworld.jpeg width="640" alt="hackerman!"></center>'
-    return "Hello {}!".format(name)
+    simplePage = """
+                '<title>helloRun</title>
+                <center>
+                <p><img src=/static/helloworld.jpeg width="640" alt="hackerman!"></p>
+                <p></p>
+                <p><img src=/static/qrcode-git.png width="300" alt="qrCode"></p>
+                <p style="font-family:sans">https://github.com/goclos/cloudrun-demo</p>
+                </center>'"""
+    return simplePage
+    #return "Hello {}!".format(name)
 
 
 if __name__ == "__main__":
