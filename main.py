@@ -16,8 +16,8 @@ def hello_world():
                 <p><img src=/static/qrcode-git.png width="300" alt="qrCode"></p>
                 <p style="font-family:sans">https://github.com/goclos/cloudrun-demo</p>
                 </center>'"""
-    return simplePage
-    #return "Hello {}!".format(name)
+    #return simplePage
+    return "Hello {}!".format(name)
 
 
 if __name__ == "__main__":
